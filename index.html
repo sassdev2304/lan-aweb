@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lança Web | Landing pages que colocam seu negócio no ar</title>
+<meta name="description" content="A Lança Web cria landing pages para negócios que ainda não aparecem para quem está procurando. Fale com a gente no WhatsApp.">
+<link rel="icon" href="assets/lw-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Geist+Mono:wght@400;500&family=Unbounded:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<canvas id="world" aria-hidden="true"></canvas>
+
+<header class="nav">
+  <a class="brand" href="#topo" aria-label="Lança Web, início">
+    <img src="assets/lw-mark.png" alt="" width="38" height="22"><span>Lança Web</span>
+  </a>
+  <a class="btn btn--sm" href="https://wa.me/553196782358" target="_blank" rel="noopener">Entrar em contato</a>
+</header>
+
+<main>
+  <!-- ACT 1 · Ignição · live interface -->
+  <section id="topo" class="act act--hero" data-act>
+    <div class="sticky">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <h1><span>Seu cliente te procurou hoje.</span> <em>Achou outro.</em></h1>
+          <p class="lede">A Lança Web cria landing pages que colocam o seu negócio na frente de quem já está procurando o que você vende.</p>
+          <div class="actions">
+            <a class="btn" href="https://wa.me/553196782358" target="_blank" rel="noopener">Entrar em contato</a>
+            <a class="link" href="#prova">Ver sites que já lançamos</a>
+          </div>
+        </div>
+        <div class="search" aria-label="Simulação de uma busca na internet">
+          <div class="search-bar"><span class="search-ico" aria-hidden="true"></span><span class="q" id="q"></span><span class="caret" aria-hidden="true"></span></div>
+          <ul class="results">
+            <li><b>O concorrente da esquina</b><span>site no ar</span></li>
+            <li><b>Aquele que abriu mês passado</b><span>site no ar</span></li>
+            <li><b>Uma loja do outro bairro</b><span>site no ar</span></li>
+            <li class="you"><b>Sua empresa</b><span>nenhum resultado</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACT 2 · Atraso · type assembly (scrub) -->
+  <section class="act act--late" data-act>
+    <div class="sticky">
+      <div class="late">
+        <h2 class="sr">O cliente que você não viu</h2>
+        <p class="late-lines" id="lateLines">
+          <span class="ln">Ele pesquisou.</span>
+          <span class="ln">Não encontrou você.</span>
+          <span class="ln">Ligou para o concorrente.</span>
+          <span class="ln ln--hot">E fechou com ele.</span>
+        </p>
+        <p class="late-note">Isso acontece todos os dias, em silêncio. Quem não aparece não é escolhido.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACT 3 · Virada · stillness + input (authored silence) -->
+  <section class="act act--turn">
+    <div class="turn">
+      <h2>Agora imagine o seu.</h2>
+      <label for="bizname">Qual o nome da sua empresa?</label>
+      <input id="bizname" type="text" maxlength="28" autocomplete="organization" placeholder="Sua Empresa">
+      <p class="turn-note">A gente monta o site dela aqui, na sua frente.</p>
+    </div>
+  </section>
+
+  <!-- ACT 4 · Lançamento · PEAK · scrub build (signature move) -->
+  <section id="lancamento" class="act act--peak" data-act>
+    <div class="sticky">
+      <div class="peak-grid">
+        <div class="peak-copy">
+          <h2>Seu site, montado na sua frente.</h2>
+          <ol class="log" aria-live="off">
+            <li data-at=".04">estrutura criada</li>
+            <li data-at=".22">nome: <span class="js-name">Sua Empresa</span></li>
+            <li data-at=".42">botão do WhatsApp conectado</li>
+            <li data-at=".62">identidade visual aplicada</li>
+            <li data-at=".74">publicado em <span class="js-slug">suaempresa</span>.com.br</li>
+          </ol>
+        </div>
+        <div class="stage" aria-hidden="true">
+          <div class="trail"></div>
+          <div class="browser">
+            <div class="browser-bar"><i></i><i></i><i></i><span class="url"><span class="js-slug">suaempresa</span>.com.br</span><span class="live">no ar</span></div>
+            <div class="ms-wrap">
+              <div class="ms ms--wire">
+                <div class="ms-nav" data-at=".08"><b class="ms-logo js-name">Sua Empresa</b><span>Sobre</span><span>Serviços</span><span>Contato</span></div>
+                <div class="ms-hero">
+                  <div class="ms-text">
+                    <div class="ms-title js-type"></div>
+                    <div class="ms-sub" data-at=".30">Atendimento rápido, direto no WhatsApp.</div>
+                    <div class="ms-btn" data-at=".40">Falar no WhatsApp</div>
+                  </div>
+                  <div class="ms-img" data-at=".34"></div>
+                </div>
+                <div class="ms-cards"><div data-at=".44">Serviços</div><div data-at=".47">Avaliações</div><div data-at=".50">Onde estamos</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="launched"><span class="js-name">Sua Empresa</span>, no ar.</p>
+    </div>
+  </section>
+
+  <!-- ACT 5 · Prova · horizontal rail -->
+  <section id="prova" class="act act--rail" data-act>
+    <div class="sticky">
+      <div class="track">
+        <div class="panel panel--intro">
+          <h2>Já lançados.</h2>
+          <p>Dois negócios reais, dois sites no ar. Estes abaixo estão rodando ao vivo.</p>
+        </div>
+        <article class="panel panel--site">
+          <div class="device"><div class="device-bar"><i></i><i></i><i></i><span>pontodoreparo.pages.dev</span></div>
+            <div class="viewport"><iframe src="https://pontodoreparo.pages.dev/" title="Site Ponto do Reparo BH, ao vivo" loading="lazy" tabindex="-1"></iframe></div></div>
+          <div class="cap">
+            <h3>Ponto do Reparo BH</h3>
+            <p>Loja de reparos hidráulicos no Dona Clara. Linhas de produto organizadas e pedido direto pelo WhatsApp, até com foto da peça.</p>
+            <a class="link" href="https://pontodoreparo.pages.dev/" target="_blank" rel="noopener">Abrir o site ↗</a>
+          </div>
+        </article>
+        <article class="panel panel--site">
+          <div class="device"><div class="device-bar"><i></i><i></i><i></i><span>clinicadrahemelydentista.netlify.app</span></div>
+            <div class="viewport"><iframe src="https://clinicadrahemelydentista.netlify.app/" title="Site Clínica Dra. Hemely Bittencourt, ao vivo" loading="lazy" tabindex="-1"></iframe></div></div>
+          <div class="cap">
+            <h3>Clínica Dra. Hemely Bittencourt</h3>
+            <p>Odontologia em Vitória da Conquista. Tratamentos, história da clínica e agendamento de consulta em uma única página.</p>
+            <a class="link" href="https://clinicadrahemelydentista.netlify.app/" target="_blank" rel="noopener">Abrir o site ↗</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACT 6 · Pouso · pointer, resolve -->
+  <section id="contato" class="act act--close">
+    <div class="close-grid">
+      <div class="close-copy">
+        <h2>Enquanto você lê isto, alguém está procurando o que você vende.</h2>
+        <p class="close-sub">Deixa ele te encontrar.</p>
+        <ol class="steps">
+          <li><b>Você chama</b> no WhatsApp.</li>
+          <li><b>A gente entende</b> o seu negócio.</li>
+          <li><b>Seu site</b> vai ao ar.</li>
+        </ol>
+        <a class="btn btn--lg" href="https://wa.me/553196782358" target="_blank" rel="noopener">Entrar em contato</a>
+        <p class="phone">WhatsApp <a href="https://wa.me/553196782358" target="_blank" rel="noopener">(31) 9678-2358</a></p>
+      </div>
+      <div class="mark" id="mark" aria-hidden="true"><img src="assets/lw-mark.png" alt="" width="525" height="305"></div>
+    </div>
+    <footer class="foot"><span>© 2026 Lança Web</span><span>Landing pages para quem quer ser encontrado.</span></footer>
+  </section>
+</main>
+
+<script src="main.js"></script>
+</body>
+</html>
